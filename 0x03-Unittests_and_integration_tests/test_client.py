@@ -14,8 +14,9 @@ class TestGithubOrgClient(unittest.TestCase):
     """
     Test class for the `GithubOrgClient` class.
 
-    This class contains unit tests for the methods of the `GithubOrgClient` class,
-    which interacts with the GitHub API to retrieve information about organizations.
+    This class contains unit tests for the methods of the
+    `GithubOrgClient` class, which interacts with the GitHub
+    API to retrieve information about organizations.
     """
     @parameterized.expand([
         ("google", {'login': "google"}),

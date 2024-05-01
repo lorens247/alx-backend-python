@@ -6,9 +6,9 @@ This project explores the concepts of unit tests and integration tests, essentia
 ## Unit Tests vs. Integration Tests
 Unit tests and integration tests serve different purposes in software testing:
 
-- **Unit Tests:** Test individual units or components of the software in isolation, typically at the function or class level. They verify that each unit behaves as expected.
+- Unit Tests: Test individual units or components of the software in isolation, typically at the function or class level. They verify that each unit behaves as expected.
 
-- **Integration Tests:** Test how multiple units or components interact with each other and with external dependencies. They verify that different parts of the system work together correctly.
+- Integration Tests: Test how multiple units or components interact with each other and with external dependencies. They verify that different parts of the system work together correctly.
 
 ## Common Testing Patterns
 ### Mocking

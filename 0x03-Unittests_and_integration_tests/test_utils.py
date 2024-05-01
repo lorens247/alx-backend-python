@@ -95,6 +95,16 @@ class TestGetJson(unittest.TestCase):
 class TestMemoize(unittest.TestCase):
     """class to tests the memoize function"""
     def test_memoize(self):
+        """
+        Test the memoize function.
+
+        This method tests the memoization functionality by creating a TestClass
+        instance, calling its a_property method twice, and checking if the
+        underlying method a_method is called only once.
+
+        Returns:
+            None
+        """
         class TestClass:
             def a_method(self):
                 return 42

@@ -11,7 +11,12 @@ from requests import HTTPError
 
 
 class TestGithubOrgClient(unittest.TestCase):
-    """Tests the GithubOrgClient class."""
+    """
+    Test class for the `GithubOrgClient` class.
+
+    This class contains unit tests for the methods of the `GithubOrgClient` class,
+    which interacts with the GitHub API to retrieve information about organizations.
+    """
     @parameterized.expand([
         ("google", {'login': "google"}),
         ("abc", {'login': "abc"}),
@@ -65,6 +70,16 @@ class TestGithubOrgClient(unittest.TestCase):
             None
         """
     def test_public_repos(self, mock_get_json: MagicMock) -> None:
+        """
+        Test the public_repos method of GithubOrgClient.
+
+        This method tests the functionality of the public_repos method in the
+        GithubOrgClient class by checking if it returns the expected number of
+        public repositories for a given organization.
+
+        Returns:
+            None
+        """
         test_payload = {
             'repos_url': "https://api.github.com/users/google/repos",
             'repos': [

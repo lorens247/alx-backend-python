@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
 This module contains unit tests for the utils module.
-
 The utils module provides various utility functions that are used throughout
 the project.These tests ensure that the functions in the utils module behave
 as expected and do not introduce any regressions.
@@ -9,7 +8,8 @@ as expected and do not introduce any regressions.
 
 import unittest
 from parameterized import parameterized
-from utils import access_nested_map
+from unittest.mock import patch, Mock
+from utils import access_nested_map, get_json
 from typing import Dict
 
 
